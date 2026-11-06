@@ -1,87 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Biodata Diri</title>
+    <title>CV - Nida Zahra Maulida</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- NAVIGASI -->
+    <nav class="navbar">
+        <div class="nav-logo">CURRICULUM VITAE</div>
+
+        <div class="nav-links">
+            <a href="../../Tugas_Web_Profile/profile.html">Web Pribadi</a>
+            <a href="index.html" class="active">CV Biodata</a>
+            <a href="../Profil_Keluarga/index.html">Profil Keluarga</a>
+        </div>
+    </nav>
+
+    <!-- CONTAINER CV -->
     <div class="cv-container">
 
-        <!-- KOLOM KIRI -->
+        <!-- SIDEBAR KIRI -->
         <aside class="sidebar">
 
-            <img src="images/NIDA.jpeg" 
-            alt="Foto Profil" 
-            class="profile-photo">
+            <div class="profile">
+                <img src="images/NIDA.jpeg" alt="Foto Nida Zahra Maulida">
 
-            <div class="identity">
                 <h1>Nida Zahra Maulida</h1>
-                <p class="job-title">Mahasiswa</p>
+                <p>Mahasiswa Sistem Informasi</p>
             </div>
 
-            <!-- Kontak -->
+            <!-- CONTACT -->
             <section class="side-section">
-                <h2>Contact</h2>
+                <h2>CONTACT</h2>
+
                 <div class="line"></div>
 
-                <p><strong>Email:</strong><br>
-                20250910088@uniku.ac.id</p>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <p>20250910088@uniku.ac.id</p>
+                </div>
 
-                <p><strong>Phone:</strong><br>
-                085793534783</p>
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <p>08xxxxxxxxxx</p>
+                </div>
 
-                <p><strong>Address:</strong><br>
-                Kuningan, Jawa Barat, Indonesia</p>
+                <div class="contact-item">
+                    <strong>Address</strong>
+                    <p>Kuningan, Jawa Barat, Indonesia</p>
+                </div>
             </section>
 
-            <!-- Bahasa -->
+            <!-- LANGUAGES -->
             <section class="side-section">
-                <h2>Languages</h2>
+                <h2>LANGUAGES</h2>
+
                 <div class="line"></div>
 
-                <div class="skill-bar">
-                    <span>Indonesia</span>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Indonesia</span>
+                        <span>90%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill indonesia"></div>
                     </div>
                 </div>
 
-                <div class="skill-bar">
-                    <span>English</span>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>English</span>
+                        <span>50%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill english"></div>
                     </div>
                 </div>
             </section>
 
-            <!-- Informasi tambahan -->
+            <!-- PERSONAL -->
             <section class="side-section">
-                <h2>Personal</h2>
+                <h2>PERSONAL</h2>
+
                 <div class="line"></div>
 
-                <p><strong>Tempat, Tanggal Lahir:</strong><br>
-                Kuningan, 13 April 2007</p>
+                <div class="contact-item">
+                    <strong>Tempat, Tanggal Lahir</strong>
+                    <p>Kuningan, 13 April 2007</p>
+                </div>
 
-                <p><strong>Jenis Kelamin:</strong><br>
-                Perempuan</p>
+                <div class="contact-item">
+                    <strong>Jenis Kelamin</strong>
+                    <p>Perempuan</p>
+                </div>
 
-                <p><strong>Hobi:</strong><br>
-                Menggambar, mendengarkan musik, dan membaca</p>
+                <div class="contact-item">
+                    <strong>Hobi</strong>
+                    <p>Menggambar, mendengarkan musik, dan membaca</p>
+                </div>
             </section>
 
         </aside>
 
-
-        <!-- KOLOM KANAN -->
+        <!-- KONTEN KANAN -->
         <main class="content">
 
-            <!-- Profil -->
+            <!-- PROFILE -->
             <section class="content-section">
-                <h2>Profile</h2>
+                <h2>PROFILE</h2>
                 <div class="underline"></div>
 
                 <p>
@@ -95,63 +125,68 @@
                 </p>
             </section>
 
-
-            <!-- Pengalaman -->
+            <!-- EXPERIENCE -->
             <section class="content-section">
-                <h2>Experience</h2>
+                <h2>EXPERIENCE</h2>
                 <div class="underline"></div>
 
-                <div class="experience-item">
-                    <div class="item-title">
-                        <strong>Pengalaman Organisasi</strong>
-                        <span>2025 - 2026</span>
-                        <small>Himpunan Mahasiswa Sistem Informasi</small>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="date">2025 - 2026</span>
+                        <h3>Pengalaman Organisasi</h3>
+                        <h4>Himpunan Mahasiswa Sistem Informasi</h4>
+                        <p>
+                            Mengikuti kegiatan organisasi dan berpartisipasi
+                            dalam berbagai kegiatan serta bekerja sama
+                            dengan anggota lainnya.
+                        </p>
                     </div>
 
-                    <p>
-                        Mengikuti kegiatan organisasi dan berpartisipasi
-                        dalam berbagai kegiatan serta bekerja sama
-                        dengan anggota lainnya.
-                    </p>
-                </div>
-
-                <div class="experience-item">
-                    <div class="item-title">
-                        <strong>Proyek Perkuliahan (Soon)</strong>
-                        <span>2026</span>
-                        <small>Web Desa Tambak Baya</small>
+                    <div class="timeline-item">
+                        <span class="date">2026</span>
+                        <h3>Proyek Perkuliahan (Soon)</h3>
+                        <h4>Web Desa Tambak Baya</h4>
+                        <p>
+                            Sedang pada proses observasi dan pengumpulan
+                            data untuk proyek yang akan dikumpulkan pada
+                            akhir semester ini.
+                        </p>
                     </div>
 
-                    <p>
-                        Sedang pada proses observasi dan pengumpulan data untuk proyek yang akan dikumpulkan pada akhir semester ini.
-                    </p>
-                </div>
-
-                <div class="experience-item">
-                    <div class="item-title">
-                        <strong>Pengalaman Lainnya</strong>
-                        <span>2025</span>
-                        <small>Design Interior dan Eksterior (Architecture)</small>
+                    <div class="timeline-item">
+                        <span class="date">2025</span>
+                        <h3>Pengalaman Lainnya</h3>
+                        <h4>Design Interior dan Eksterior (Architecture)</h4>
+                        <p>
+                            Memiliki pengalaman bekerja di perusahaan
+                            dengan terlibat dalam proyek arsitektur,
+                            meliputi perancangan interior dan eksterior
+                            serta kegiatan lapangan yang berkaitan dengan
+                            pembangunan. Selain itu, meraih Juara 3 dalam
+                            kompetisi perancangan bisnis dan sistem aplikasi
+                            serta Juara 1 dalam lomba menggambar.
+                            Pengalaman tersebut memberikan wawasan di
+                            bidang bisnis, arsitektur, dan seni, yang
+                            menjadi salah satu minat utama saya.
+                        </p>
                     </div>
 
-                    <p>
-                        Memiliki pengalaman bekerja di perusahaan dengan terlibat dalam proyek arsitektur, meliputi perancangan interior dan eksterior serta kegiatan lapangan yang berkaitan dengan pembangunan. Selain itu, meraih Juara 3 dalam kompetisi perancangan bisnis dan sistem aplikasi serta Juara 1 dalam lomba menggambar. Pengalaman tersebut memberikan wawasan di bidang bisnis, arsitektur, dan seni, yang menjadi salah satu minat utama saya. 
-                    </p>
                 </div>
             </section>
 
-
-            <!-- Pendidikan -->
+            <!-- EDUCATION -->
             <section class="content-section">
-                <h2>Education</h2>
+                <h2>EDUCATION</h2>
                 <div class="underline"></div>
 
                 <div class="education-item">
-                    <div>
-                        <strong>Universitas Kuningan</strong>
+                    <div class="education-heading">
+                        <h3>Universitas Kuningan</h3>
                         <span>2025 - Sekarang</span>
-                        <small>Sistem Informasi S1</small>
                     </div>
+
+                    <h4>Sistem Informasi S1</h4>
 
                     <p>
                         Sedang menempuh pendidikan tinggi dan
@@ -161,11 +196,12 @@
                 </div>
 
                 <div class="education-item">
-                    <div>
-                        <strong>SMK Negeri 3 Kuningan</strong>
+                    <div class="education-heading">
+                        <h3>SMK Negeri 3 Kuningan</h3>
                         <span>2022 - 2025</span>
-                        <small>Desain Pemodelan dan Informasi Bangunan</small>
                     </div>
+
+                    <h4>Desain Pemodelan dan Informasi Bangunan</h4>
 
                     <p>
                         Menyelesaikan pendidikan menengah dan
@@ -175,51 +211,62 @@
                 </div>
             </section>
 
-
-            <!-- Keahlian -->
+            <!-- EXPERTISE -->
             <section class="content-section">
-                <h2>Expertise</h2>
+                <h2>EXPERTISE</h2>
                 <div class="underline"></div>
 
                 <div class="expertise-grid">
 
                     <div class="expertise-item">
-                        <span>Microsoft Word</span>
+                        <div class="skill-info">
+                            <span>Microsoft Word</span>
+                        </div>
                         <div class="bar">
                             <div class="fill word"></div>
                         </div>
                     </div>
 
                     <div class="expertise-item">
-                        <span>Microsoft Excel</span>
+                        <div class="skill-info">
+                            <span>Microsoft Excel</span>
+                        </div>
                         <div class="bar">
                             <div class="fill excel"></div>
                         </div>
                     </div>
 
                     <div class="expertise-item">
-                        <span>HTML dan CSS</span>
+                        <div class="skill-info">
+                            <span>HTML dan CSS</span>
+                        </div>
                         <div class="bar">
                             <div class="fill html"></div>
                         </div>
                     </div>
 
                     <div class="expertise-item">
-                        <span>AutoCAD dan SketchUp</span>
+                        <div class="skill-info">
+                            <span>AutoCAD dan SketchUp</span>
+                        </div>
                         <div class="bar">
-                            <div class="fill css"></div>
+                            <div class="fill autocad"></div>
                         </div>
                     </div>
 
                     <div class="expertise-item">
-                        <span>Communication</span>
+                        <div class="skill-info">
+                            <span>Communication</span>
+                        </div>
                         <div class="bar">
                             <div class="fill communication"></div>
                         </div>
                     </div>
 
                     <div class="expertise-item">
-                        <span>Teamwork</span>
+                        <div class="skill-info">
+                            <span>Teamwork</span>
+                        </div>
                         <div class="bar">
                             <div class="fill teamwork"></div>
                         </div>
@@ -231,6 +278,11 @@
         </main>
 
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nida Zahra Maulida | Curriculum Vitae</p>
+    </footer>
 
 </body>
 </html>

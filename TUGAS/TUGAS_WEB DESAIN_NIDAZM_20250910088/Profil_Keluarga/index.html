@@ -4,23 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Keluarga</title>
+    <title>Our Family - Nida Zahra Maulida</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <!-- HEADER -->
     <header class="header">
-        <div class="logo">Our Family.</div>
-        <p>HOME | FAMILY PROFILE</p>
+        <div class="container navbar">
+            <div class="logo">OUR FAMILY.</div>
+
+            <nav>
+                <a href="#beranda">Home</a>
+                <a href="#about">About</a>
+                <a href="#members">Family</a>
+                <a href="#activities">Activities</a>
+                <a href="#message">Contact</a>
+            </nav>
+
+            <a href="../../Tugas_Web_Profile/profile.html"
+               class="nav-button">
+                Web Pribadi
+            </a>
+        </div>
     </header>
 
-    <!-- HERO / BAGIAN UTAMA -->
-    <section class="hero">
-
-        <div class="hero-text">
-            <p class="welcome">WELCOME TO OUR FAMILY</p>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO OUR FAMILY</p>
 
             <h1>Here,<br>The Family.</h1>
 
@@ -30,6 +41,17 @@
                 Kami saling menyayangi, mendukung,
                 dan menjaga kebersamaan.
             </p>
+
+            <div class="hero-buttons">
+                <a href="#members" class="btn btn-light">
+                    Kenali Keluarga
+                </a>
+
+                <a href="../../Tugas_Web_Profile/profile.html"
+                   class="btn btn-outline">
+                    Kunjungi Web Pribadi →
+                </a>
+            </div>
 
             <div class="address">
                 <b>Alamat</b>
@@ -41,27 +63,48 @@
             <img src="images/WhatsApp Image 2026-10-22 at 14.32.09.jpeg"
                  alt="Foto Keluarga">
         </div>
-
     </section>
 
-    <!-- TENTANG KELUARGA -->
-    <section class="about">
-        <p class="subtitle">GET TO KNOW US</p>
-        <h2>Tentang Keluarga Kami</h2>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="section-heading">
+            <p class="subtitle">GET TO KNOW US</p>
+            <h2>Tentang Keluarga Kami</h2>
+            <div class="line"></div>
+            <p>
+                Keluarga merupakan tempat pertama untuk belajar
+                tentang kasih sayang, kebersamaan, dan tanggung jawab.
+                Kami selalu berusaha menciptakan keluarga yang
+                harmonis, bahagia, dan saling menghargai.
+            </p>
+        </div>
 
-        <p>
-            Keluarga merupakan tempat pertama untuk belajar
-            tentang kasih sayang, kebersamaan, dan tanggung jawab.
-            Kami selalu berusaha menciptakan keluarga yang
-            harmonis, bahagia, dan saling menghargai.
-        </p>
+        <div class="about-box">
+            <div class="about-image">
+                <img src="images/WhatsApp Image 2026-10-22 at 14.32.09.jpeg"
+                     alt="Kebersamaan Keluarga">
+            </div>
+
+            <div class="about-text">
+                <h3>Our Little Family</h3>
+                <p>
+                    Keluarga kecil yang selalu berusaha
+                    menjaga kebersamaan, saling mendukung,
+                    dan menciptakan kenangan indah bersama.
+                </p>
+                <a href="#members" class="btn btn-dark">
+                    Read More
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- VISI KELUARGA -->
-    <section class="vision">
-        <div>
+    <section class="vision section">
+        <div class="section-heading">
             <p class="subtitle">OUR FAMILY VISION</p>
             <h2>Visi Keluarga</h2>
+            <div class="line"></div>
             <p>
                 Membangun keluarga yang harmonis, bahagia,
                 saling menghargai, dan penuh kasih sayang.
@@ -70,16 +113,20 @@
     </section>
 
     <!-- ANGGOTA KELUARGA -->
-    <section class="members">
-        <p class="subtitle">MEET OUR FAMILY</p>
-        <h2>Anggota Keluarga</h2>
+    <section class="members section" id="members">
+        <div class="section-heading">
+            <p class="subtitle">MEET OUR FAMILY</p>
+            <h2>Anggota Keluarga</h2>
+            <div class="line"></div>
+            <p>Mengenal anggota keluarga kecil kami.</p>
+        </div>
 
         <div class="member-container">
 
             <div class="member-card">
                 <span>01</span>
                 <h3>Abdul Azis</h3>
-                <p class="status">Ayah</p>
+                <p class="status">AYAH</p>
                 <hr>
                 <p>Hobi: Menanam dan Membaca</p>
             </div>
@@ -87,7 +134,7 @@
             <div class="member-card">
                 <span>02</span>
                 <h3>Ika Rostika</h3>
-                <p class="status">Ibu</p>
+                <p class="status">IBU</p>
                 <hr>
                 <p>Hobi: Memasak dan Menyanyi</p>
             </div>
@@ -95,7 +142,7 @@
             <div class="member-card">
                 <span>03</span>
                 <h3>Nida Zahra Maulida</h3>
-                <p class="status">Anak Pertama</p>
+                <p class="status">ANAK PERTAMA</p>
                 <hr>
                 <p>Hobi: Menggambar dan Mendengarkan Musik</p>
             </div>
@@ -104,7 +151,7 @@
     </section>
 
     <!-- KEGIATAN DAN HOBI -->
-    <section class="activities">
+    <section class="activities section" id="activities">
 
         <div class="activity-box">
             <p class="subtitle">OUR MOMENTS</p>
@@ -132,10 +179,27 @@
 
     </section>
 
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <p class="subtitle">GET TO KNOW ME</p>
+        <h2>Ingin Mengenal Saya Lebih Dekat?</h2>
+        <p>
+            Kunjungi website pribadi saya untuk mengetahui
+            profil, aktivitas akademik, dan pengalaman organisasi.
+        </p>
+        <a href="../../Tugas_Web_Profile/profile.html"
+           class="btn btn-light">
+            Kunjungi Web Profil Pribadi →
+        </a>
+    </section>
+
     <!-- FORM PESAN -->
-    <section class="message">
-        <p class="subtitle">SEND A MESSAGE</p>
-        <h2>Form Pesan Keluarga</h2>
+    <section class="message section" id="message">
+        <div class="section-heading">
+            <p class="subtitle">SEND A MESSAGE</p>
+            <h2>Form Pesan Keluarga</h2>
+            <div class="line"></div>
+        </div>
 
         <form action="#" method="get">
 
@@ -153,18 +217,21 @@
                       placeholder="Tuliskan pesan..."
                       required></textarea>
 
-            <button type="submit">Kirim Pesan</button>
-            <button type="reset" class="reset">Hapus</button>
+            <div class="form-buttons">
+                <button type="submit">Kirim Pesan</button>
+                <button type="reset" class="reset">Hapus</button>
+            </div>
 
         </form>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <h3>This is Our Family Profile</h3>
+    <footer class="footer">
+        <h3>OUR FAMILY.</h3>
+        <p>This is Our Family Profile</p>
         <p>Nida Zahra Maulida</p>
-        <p>© 2026 Family Profile</p>
+        <div class="footer-line"></div>
+        <p>© 2026 Family Profile. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>

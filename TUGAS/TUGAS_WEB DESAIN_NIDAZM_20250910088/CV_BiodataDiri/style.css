@@ -1,5 +1,5 @@
 
-/* Pengaturan dasar */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,108 +7,168 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #aaaaaa;
-    color: #333333;
-    padding: 40px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #263445;
+    line-height: 1.6;
 }
 
-/* Kotak utama CV */
-.cv-container {
-    width: 850px;
-    max-width: 100%;
-    margin: auto;
-    background-color: white;
+/* NAVBAR */
+.navbar {
+    background: #172b4d;
+    padding: 18px 7%;
     display: flex;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Kolom kiri */
-.sidebar {
-    width: 35%;
-    background-color: #30303a;
+.nav-logo {
     color: white;
-    padding-bottom: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.profile-photo {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-.identity {
-    padding: 25px 30px;
-}
-
-.identity h1 {
-    font-size: 30px;
-    line-height: 1.1;
-    margin-bottom: 10px;
-}
-
-.job-title {
+.nav-links a {
+    color: #e0e7f0;
+    text-decoration: none;
     font-size: 14px;
-    color: #dddddd;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-/* Bagian sidebar */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #9fc4ed;
+}
+
+/* CV CONTAINER */
+.cv-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 32% 68%;
+    background: white;
+    box-shadow: 0 8px 30px rgba(20, 40, 70, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #172b4d;
+    color: white;
+    padding: 35px 28px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile img {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 18px;
+}
+
+.profile h1 {
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.profile p {
+    color: #b8c9df;
+    font-size: 14px;
+}
+
+/* SIDEBAR SECTION */
 .side-section {
-    padding: 15px 30px;
+    margin-bottom: 30px;
 }
 
 .side-section h2 {
-    font-size: 21px;
-    margin-bottom: 8px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
 }
 
 .line {
     width: 45px;
-    height: 2px;
-    background-color: white;
-    margin-bottom: 20px;
+    height: 3px;
+    background: #8da9ca;
+    margin: 10px 0 18px;
 }
 
-.side-section p {
-    font-size: 12px;
-    line-height: 1.6;
+.contact-item {
     margin-bottom: 15px;
 }
 
-/* Bar kemampuan */
-.skill-bar {
+.contact-item strong {
+    font-size: 13px;
+    color: #b8c9df;
+}
+
+.contact-item p {
+    font-size: 13px;
+    color: #f0f4f9;
+    overflow-wrap: anywhere;
+}
+
+/* SKILL BAR */
+.skill {
+    margin-bottom: 17px;
+}
+
+.skill-info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 13px;
-    font-size: 12px;
     gap: 10px;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.sidebar .skill-info {
+    color: #f0f4f9;
 }
 
 .bar {
-    width: 100px;
-    height: 9px;
-    background-color: #dddddd;
+    width: 100%;
+    height: 8px;
+    background: #dce5ef;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .fill {
     height: 100%;
-    background-color: #55555f;
+    background: #4779ae;
+    border-radius: 10px;
 }
 
 .indonesia {
-    width: 95%;
+    width: 90%;
 }
 
 .english {
-    width: 55%;
+    width: 50%;
 }
 
-/* Kolom kanan */
+/* MAIN CONTENT */
 .content {
-    width: 65%;
-    padding: 40px 35px;
+    padding: 40px 38px;
+    background: white;
 }
 
 .content-section {
@@ -116,142 +176,190 @@ body {
 }
 
 .content-section h2 {
-    font-size: 23px;
-    color: #292929;
-    margin-bottom: 8px;
+    color: #172b4d;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .underline {
-    width: 45px;
-    height: 3px;
-    background-color: #30303a;
-    margin-bottom: 20px;
+    width: 55px;
+    height: 4px;
+    background: #4779ae;
+    margin: 9px 0 20px;
 }
 
 .content-section > p {
-    font-size: 13px;
-    line-height: 1.7;
+    color: #526174;
+    font-size: 14px;
     text-align: justify;
 }
 
-/* Pengalaman */
-.experience-item,
-.education-item {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 12px;
-    margin-bottom: 22px;
+/* EXPERIENCE TIMELINE */
+.timeline {
+    border-left: 2px solid #c8d6e6;
+    padding-left: 22px;
+    margin-left: 7px;
 }
 
-.item-title strong,
-.education-item strong {
-    display: block;
+.timeline-item {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background: #4779ae;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #4779ae;
+}
+
+.date {
+    color: #4779ae;
     font-size: 12px;
-    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.item-title span,
-.education-item span,
-.item-title small,
-.education-item small {
-    display: block;
-    font-size: 11px;
-    color: #666666;
-    margin-bottom: 4px;
+.timeline-item h3,
+.education-heading h3 {
+    color: #172b4d;
+    font-size: 16px;
+    margin: 3px 0;
 }
 
-.experience-item p,
+.timeline-item h4,
+.education-item h4 {
+    color: #6685a8;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-item p,
 .education-item p {
-    font-size: 12px;
-    line-height: 1.6;
+    color: #526174;
+    font-size: 13px;
+    text-align: justify;
 }
 
-/* Keahlian */
+/* EDUCATION */
+.education-item {
+    margin-bottom: 23px;
+    padding-left: 15px;
+    border-left: 3px solid #8da9ca;
+}
+
+.education-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.education-heading span {
+    color: #6685a8;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* EXPERTISE */
 .expertise-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px 20px;
+    gap: 22px 25px;
 }
 
-.expertise-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 11px;
+.expertise-item .skill-info {
+    color: #34445a;
+    font-weight: 600;
 }
 
-.expertise-item span {
-    width: 105px;
-}
-
-.expertise-item .bar {
-    flex: 1;
-    min-width: 35px;
-}
-
-/* Ukuran kemampuan */
+/* EXPERTISE LEVEL */
 .word {
     width: 85%;
 }
 
 .excel {
-    width: 65%;
+    width: 70%;
 }
 
 .html {
     width: 75%;
 }
 
-.css {
-    width: 65%;
-}
-
-.communication {
+.autocad {
     width: 80%;
 }
 
-.teamwork {
-    width: 75%;
+.communication {
+    width: 85%;
 }
 
-/* Tampilan HP */
-@media screen and (max-width: 650px) {
-    body {
-        padding: 15px;
+.teamwork {
+    width: 90%;
+}
+
+/* FOOTER */
+footer {
+    background: #172b4d;
+    color: #dce5ef;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 15px;
     }
 
     .cv-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        margin: 20px;
     }
 
-    .sidebar,
-    .content {
-        width: 100%;
-    }
-
-    .profile-photo {
-        height: 300px;
+    .sidebar {
+        padding: 30px;
     }
 
     .content {
         padding: 30px 25px;
     }
 
-    .experience-item,
-    .education-item {
+    .expertise-grid {
         grid-template-columns: 1fr;
-        gap: 5px;
     }
 }
 
-@media print {
-    body {
-        background-color: white;
-        padding: 0;
+@media (max-width: 450px) {
+
+    .nav-logo {
+        font-size: 15px;
     }
 
-    .cv-container {
-        width: 100%;
-        box-shadow: none;
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .profile h1 {
+        font-size: 21px;
+    }
+
+    .content-section h2 {
+        font-size: 19px;
     }
 }

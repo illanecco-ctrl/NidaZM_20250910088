@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profil Pribadi - Nida Zahra Maulida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar & Header -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <span>Portal Pribadi — Universitas Kuningan</span>
+                <div class="top-links">
+                <a href="mailto:20250910088@uniku.ac.id">Email</a>
+                <a href="https://uniku.ac.id/" target="_blank">Situs Resmi</a>
+                <a href="#kontak">Kontak</a>
+                </div>
+            </div>
+        </div>
+        <div class="brand-bar container">
+            <div class="logo-area">
+                <div class="logo-placeholder">fkom</div>
+                <div>
+                    <h1>Nida Zahra Maulida</h1>
+                    <p>Mahasiswa Sistem Informasi — Universitas Kuningan</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#akademik">Akademik</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <main class="container main-layout">
+        
+        <!-- Kolom Utama (Kiri) -->
+        <section class="content-left">
+            
+            <!-- Hero Banner -->
+            <div id="beranda" class="hero-card">
+                <div class="profile-img-container">
+                    <!-- Pastikan file foto profil ada di folder asset/ -->
+                    <img src="images/NIDA.jpeg" alt="Foto Profil" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+                </div>
+                <div class="hero-text">
+                    <h2>Hai, Welcomee!</h2>
+                    <p>Laman resmi untuk kegiatan akademik, materi pembelajaran, hasil penelitian, serta pengabdian kepada masyarakat, Universitas Kuningan. Mendampingi, Melayani, Memberikan yang Terbaik.</p>
+                    <div class="hero-buttons">
+                        <a href="#profil" class="btn btn-warning">Lihat Profil Lengkap</a>
+                        <a href="#akademik" class="btn btn-outline">Materi Kuliah</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tentang Saya (Sesuai Referensi Gambar) -->
+           <article id="profil" class="section-card">
+                <h3>Tentang Saya</h3>
+                <p>Halo! Saya Nida Zahra Maulida, mahasiswa Program Studi Sistem Informasi di Universitas Kuningan. Saya memiliki minat untuk mempelajari perkembangan teknologi, memahami bagaimana sistem informasi dapat membantu berbagai kebutuhan, serta mengembangkan kemampuan dalam bidang organisasi dan kreativitas. </p>
+                <p style="margin-top: 10px;">Di luar itu semua, saya memiliki ketertarikan terhadap dunia seni dan kreativitas. Saya senang menggambar, mendengarkan musik, serta membaca. Melalui kegiatan tersebut, saya dapat mengekspresikan diri, memperoleh inspirasi, dan mengembangkan kreativitas.</p>
+                <h4 class="sub-title" style="margin-top: 20px;">Pengalaman Organisasi</h4>
+                <div style="background-color: #f9f9f9; border-left: 4px solid #003366; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+                    <strong>Himpunan Sistem Informasi (HIMASI)</strong><br>
+                    <span style="font-size: 13px; color: #666;">Jabatan: Sekretaris Divisi Keorganisasian</span>
+                    <p style="font-size: 13px; margin-top: 5px; color: #444;">Berperan dalam mendukung administrasi dan koordinasi internal organisasi, mengelola kebutuhan kesekretariatan divisi, serta membantu memastikan kelancaran komunikasi dan pelaksanaan program kerja HIMASI di lingkungan Fakultas Ilmu Komputer Universitas Kuningan.</p>
+                </div>
+                <h4 class="sub-title">Minat & Fokus Keahlian</h4>
+                <ul style="list-style-type: disc; padding-left: 20px; font-size: 13px; color: #444; line-height: 1.8;">
+                    <li><strong>Organisasi & Riset:</strong> Keorganisasian (KEOR) di HIMASI</li>
+                    <li><strong>Teknologi:</strong> Pemrograman Web Dasar (HTML & CSS) & Analisis Sistem</li>
+                    <li><strong>Seni & Kreativitas:</strong> Menggambar, Apresiasi Seni, dan Eksplorasi Kreatif</li>
+                    <li><strong>Soft Skills:</strong> Komunikasi, Kerja Sama Tim, dan Manajemen Waktu</li>
+                </ul>
+                <h4 class="sub-title" style="margin-top: 20px;">Riwayat Pendidikan</h4>
+                <ul class="timeline">
+                    <li>
+                        <strong>2025 — Mahasiswa Sistem Informasi</strong>
+                        <span>Universitas Kuningan</span>
+                    </li>
+                    <li>
+                        <strong>2022 — Sekolah Menengah Atas</strong>
+                        <span>SMK Negeri 3 Kuningan</span>
+                    </li>
+                    <li>
+                        <strong>2019 — Sekolah Menengah Pertama</strong>
+                        <span>SMP Negeri 1 Kadugede</span>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Akademik / Jadwal Kuliah -->
+            <article id="akademik" class="section-card">
+                <h3>Akademik</h3>
+                <div class="table-group">
+                    <h4>Jadwal Kuliah (Semester 3)</h4>
+                    <h5>Senin</h5>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Jenis</th>
+                                    <th>Kelas Mata Kuliah</th>
+                                    <th>Ruang</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td>14:35</td>
+                                    <td>Kuliah</td>
+                                    <td>Riset Operasi (25-02)</td>
+                                    <td>Online / Kelas H</td>
+                                </tr>
+                                <tr>
+                                    <td>14:40</td>
+                                    <td>16:15</td>
+                                    <td>Kuliah</td>
+                                    <td>Pemrograman Dasar (25-02)</td>
+                                    <td>Online / Kelas I</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5>Selasa</h5>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Jenis</th>
+                                    <th>Kelas Mata Kuliah</th>
+                                    <th>Ruang</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08:00</td>
+                                    <td>09:35</td>
+                                    <td>Praktikum</td>
+                                    <td>Analisis dan Perancangan Sistem Informasi (25-02)</td>
+                                    <td>Online / Lab. Multimedia</td>
+                                </tr>
+                                <tr>
+                                    <td>09:40</td>
+                                    <td>11:15</td>
+                                    <td>Kuliah</td>
+                                    <td>Statistika Data (25-02)</td>
+                                    <td>Online / Kelas K</td>
+                                </tr>
+                                <tr>
+                                    <td>14:40</td>
+                                    <td>16:15</td>
+                                    <td>Praktikum</td>
+                                    <td>Pemrograman Dasar (25-02)</td>
+                                    <td>Online / Lab. RPL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5>Rabu</h5>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Jenis</th>
+                                    <th>Kelas Mata Kuliah</th>
+                                    <th>Ruang</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08:00</td>
+                                    <td>09:40</td>
+                                    <td>Kuliah</td>
+                                    <td>Arsitektur Komputer dan Sistem Operasi (25-02)</td>
+                                    <td>Online / Kelas Kosong / Kelas L</td>
+                                </tr>
+                                <tr>
+                                    <td>10:30</td>
+                                    <td>12:05</td>
+                                    <td>Kuliah</td>
+                                    <td>Analisis dan Perancangan Sistem Informasi (25-02)</td>
+                                    <td>Online / Kelas E</td>
+                                </tr>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td>14:35</td>
+                                    <td>Kuliah</td>
+                                    <td>Kalkulus (25-02)</td>
+                                    <td>Online / Kelas I / FKIP B3.01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5>Kamis</h5>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Jenis</th>
+                                    <th>Kelas Mata Kuliah</th>
+                                    <th>Ruang</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08:00</td>
+                                    <td>09:35</td>
+                                    <td>Praktikum</td>
+                                    <td>Web Desain (25-02)</td>
+                                    <td>Online / Lab. RPL</td>
+                                </tr>
+                                <tr>
+                                    <td>09:40</td>
+                                    <td>11:15</td>
+                                    <td>Kuliah</td>
+                                    <td>English Communication for IT (25-02)</td>
+                                    <td>Online / Kelas A</td>
+                                </tr>
+                                 <tr>
+                                    <td>13:00</td>
+                                    <td>14:35</td>
+                                    <td>Kuliah</td>
+                                    <td>Web Desain (25-02)</td>
+                                    <td>Online / Kelas C</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5>Jumat</h5>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Mulai</th>
+                                    <th>Selesai</th>
+                                    <th>Jenis</th>
+                                    <th>Kelas Mata Kuliah</th>
+                                    <th>Ruang</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08:00</td>
+                                    <td>10:25</td>
+                                    <td>Kuliah</td>
+                                    <td>Analisis Proses Bisnis (25-02)</td>
+                                    <td>Online / Kelas</td>
+                                </tr>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td>14:35</td>
+                                    <td>Praktikum</td>
+                                    <td>Statistika Data (25-02)</td>
+                                    <td>Online / Lab. Multimedia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Hubungi Saya -->
+            <article id="kontak" class="section-card">
+                <h3>Hubungi Saya</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <p>20250910088@uniku.ac.id</p>
+                        <strong>Telepon / WhatsApp</strong>
+                        <p>+62 8xx-xxxx-xxxx</p>
+                        <strong>Jam Kerja</strong>
+                        <p>Senin-Jumat<br>08.00–17.00 WIB</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Alamat Kampus</strong>
+                        <p>Fakultas Ilmu Komputer<br>
+                        Universitas Kuningan — Kampus 2<br>
+                        Jl. Pramuka No. 67, Purwawinangun<br>
+                        Kuningan, Jawa Barat — 45512</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Sidebar (Kanan) -->
+        <aside class="content-right">
+            
+<div class="sidebar-card">
+    <h4>Tautan Cepat</h4>
+
+    <ul class="sidebar-links">
+        <li><a href="https://siakad.uniku.ac.id">Portal Akademik</a></li>
+
+        <li>
+            <a href="/TUGAS/TUGAS_WEB%20DESAIN_NIDAZM_20250910088/CV_BiodataDiri/index.html">
+                Profile Diri
+            </a>
+        </li>
+
+        <li>
+            <a href="/TUGAS/TUGAS_WEB%20DESAIN_NIDAZM_20250910088/Profil_Keluarga/index.html">
+                Profile Keluarga
+            </a>
+        </li>
+
+       <li class="sidebar-dropdown">
+        <details>
+        <summary>Laporan Praktikum</summary>
+        <ul class="submenu">
+            <li class="sub-heading">Praktikum</li>
+            <li><a href="https://github.com/illanecco-ctrl/NidaZM_20250910088/tree/main/PRAKTIKUM/Modul_01">Modul 1</a></li>
+            <li><a href="https://github.com/illanecco-ctrl/NidaZM_20250910088/tree/main/PRAKTIKUM/Modul_02">Modul 2</a></li>
+        </ul>
+    </details>
+</li>
+
+<li class="sidebar-dropdown">
+    <details>
+        <summary>Tugas</summary>
+        <ul class="submenu">
+            <li><a href="https://github.com/illanecco-ctrl/NidaZM_20250910088/tree/main/TUGAS/TUGAS_WEB%20DESAIN_NIDAZM_20250910088/CV_BiodataDiri">CV Pribadi</a></li>
+            <li><a href="https://github.com/illanecco-ctrl/NidaZM_20250910088/tree/main/TUGAS/TUGAS_WEB%20DESAIN_NIDAZM_20250910088/Profil_Keluarga">Profile Keluarga</a></li>
+        </ul>
+    </details>
+</li>
+
+        <li><a href="#">Tugas Akhir</a></li>
+    </ul>
+</div>
+
+            <div class="sidebar-card highlight-card custom-schedule-box">
+                <div class="schedule-box-header">
+                    <span class="icon-calendar">📅</span>
+                    <h4>Jadwal Kuliah</h4>
+                </div>
+                <div class="schedule-box-body">
+                    <div class="schedule-day">Kamis</div>
+                    <div class="schedule-time">08.00 — 14.35 WIB</div>
+                    <div class="schedule-location">
+                        FKOM — Ruang Kelas / Online<br>
+                        Web Desain & English Communication for IT.
+                    </div>
+                    <a href="https://wa.me/" target="_blank" class="btn btn-schedule-hubungi">
+                        💬 Hubungi
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Tentang</h4>
+                <p class="small-text">Universitas Kuningan —   Menjunjung tinggi keunggulan, karakter, dan semangat untuk mencetak generasi berilmu, berakhlak, serta bermanfaat bagi masyarakat.</p>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h5>Tentang Laman</h5>
+                <p>Laman pribadi mahasiswa Universitas Kuningan sebagai media informasi akademik, pembelajaran, dan aktivitas perkuliahan.</p>
+            </div>
+            <div>
+                <h5>Tautan Resmi</h5>
+                <ul>
+                    <li><a href="#">Website Utama Uniku</a></li>
+                    <li><a href="#">Fakultas Ilmu Komputer</a></li>
+                    <li><a href="#">Program Studi Sistem Informasi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Kontak Kampus</h5>
+                <p>Kampus 1: Jl. Cut Nyak Dhien No.36A, Cijoho — 45513<br>
+                Kampus 2: Jl. Pramuka No.67, Purwawinangun — 45512<br>
+                Email: info@uniku.ac.id</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Universitas Kuningan — Melayani dengan sepenuh hati dan memberikan yang terbaik.<br>
+            &copy; Universitas Kuningan, Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
