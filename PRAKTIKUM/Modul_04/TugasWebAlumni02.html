@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Alumni</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f2eb;
+            color: #243247;
+            padding: 35px 7%;
+        }
+
+        /* Bagian Header */
+        header {
+            background-color: #243b55;
+            color: white;
+            padding: 35px;
+            border-radius: 18px;
+            margin-bottom: 35px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #d5dfeb;
+            font-size: 14px;
+        }
+
+        /* Judul */
+        .section-title {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .description {
+            color: #68788b;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        /* Kolom Pencarian */
+        #searchInput {
+            width: 100%;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border: 2px solid #d6d1c7;
+            border-radius: 30px;
+            background-color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        #searchInput:focus {
+            border-color: #527da8;
+            box-shadow: 0 0 0 3px rgba(82, 125, 168, 0.15);
+        }
+
+        /* Jumlah Alumni */
+        #jumlahAlumni {
+            margin-bottom: 20px;
+            color: #627184;
+            font-size: 14px;
+        }
+
+        /* Daftar Alumni */
+        .alumni-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        /* Kartu Profil */
+        .alumni-card {
+            background-color: white;
+            padding: 25px 22px;
+            border-radius: 16px;
+            border-left: 5px solid #527da8;
+            box-shadow: 0 4px 12px rgba(36, 59, 85, 0.07);
+            transition: all 0.3s ease;
+        }
+
+        .alumni-card h3 {
+            color: #243b55;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .alumni-card p {
+            color: #68788b;
+            font-size: 13px;
+            margin-top: 9px;
+        }
+
+        /* Efek Hover */
+        .alumni-card:hover {
+            transform: translateY(-7px) scale(1.02);
+            border-left-color: #d49b52;
+            box-shadow: 0 12px 24px rgba(36, 59, 85, 0.15);
+        }
+
+        /* Data Tidak Ditemukan */
+        #noResult {
+            text-align: center;
+            color: #b94b4b;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            padding: 20px;
+            color: #68788b;
+            font-size: 13px;
+            border-top: 1px solid #d6d1c7;
+        }
+
+        /* Tampilan Responsif */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            header {
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Website -->
+    <header>
+        <h1>Find Your Alumni</h1>
+        <p>Informasi dan pencarian data alumni</p>
+    </header>
+
+    <!-- Bagian Daftar Alumni -->
+    <main>
+        <h2 class="section-title">Daftar Alumni</h2>
+        <p class="description">
+            Temukan informasi alumni berdasarkan nama atau jurusan.
+        </p>
+
+        <!-- Kolom Pencarian -->
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari nama atau jurusan alumni..."
+        >
+
+        <p id="jumlahAlumni"></p>
+
+        <!-- Tempat Menampilkan Data -->
+        <div id="alumniContainer" class="alumni-container"></div>
+
+        <p id="noResult" hidden>
+            Data alumni tidak ditemukan.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Find Your Alumni</p>
+    </footer>
+
+    <script>
+        // Daftar 100 nama alumni
+        const namaAlumni = [
+            "Nida Zahra Maulida", "Riffa Riyana", "Abdul Alhaq",
+            "Aurel Safitri", "Bima Kurniawan", "Cahya Ramadhan",
+            "Daffa Alfarizi", "Dinda Maharani", "Farel Firmansyah",
+            "Febriansyah Putra", "Ghea Aprilia", "Haikal Rizky",
+            "Icha Permatasari", "Ilham Ramadhan", "Jasmine Aulia",
+            "Kezia Natalia", "Mahendra Wijaya", "Nabila Khairunnisa",
+            "Naufal Fadillah", "Nayla Azzahra", "Rafi Alfarizi",
+            "Raisa Amelia", "Reza Firmansyah", "Salma Nurhaliza",
+            "Syahrul Ramadhan", "Tasya Oktaviani", "Vito Aditya",
+            "Yasmin Aulia", "Zidan Maulana", "Alif Hidayat",
+            "Anindya Putri", "Arya Saputra", "Ayu Lestari",
+            "Bayu Prakoso", "Calista Maharani", "Dhani Setiawan",
+            "Dio Pratama", "Elisa Rahmawati", "Fahmi Akbar",
+            "Farah Nabila", "Fauzan Hakim", "Gilang Saputra",
+            "Hana Apriliani", "Indra Gunawan", "Intan Permatasari",
+            "Javier Alexander", "Karin Amelia", "Khalid Maulana",
+            "Laila Zahira", "Miftahul Jannah", "Nadira Putri",
+            "Omar Faruq", "Prita Anggraini", "Rangga Pratama",
+            "Rania Safitri", "Rizal Maulana", "Sabrina Aulia",
+            "Satria Nugraha", "Sekar Ayuningtyas", "Taufik Hidayat",
+            "Vania Maharani", "Wahyu Prasetyo", "Yohana Natalia",
+            "Zahra Nurfadilah", "Abdul Rahman", "Aisyah Humaira",
+            "Bagus Setiawan", "Bella Aprilia", "Damar Wicaksono",
+            "Dewangga Putra", "Erlangga Saputra", "Fitria Ningsih",
+            "Galang Ramadhan", "Helmi Kurnia", "Irfan Setiawan",
+            "Jihan Azzahra", "Kania Amalia", "Luthfi Ramadhan",
+            "Maharani Putri", "Nanda Prakoso", "Oktavian Rizky",
+            "Pandu Ramadhan", "Qonita Zahra", "Raka Firmansyah",
+            "Salsabila Putri", "Teguh Santoso", "Umar Maulana",
+            "Vira Anggraini", "Winda Kartika", "Yudha Saputra",
+            "Zaki Fadillah", "Aldo Pratama", "Bintang Maharani",
+            "Cindy Rahma", "Dimas Kurnia", "Evan Maulana",
+            "Fina Zahra", "Gavin Alexander", "Hilda Safitri",
+            "Ibrahim Akbar"
+        ];
+
+        // Daftar jurusan
+        const jurusan = [
+            "Sistem Informasi",
+            "Teknik Informatika",
+            "Teknik Sipil",
+            "Akuntansi",
+            "Desain Komunikasi Visual"
+        ];
+
+        // Membuat data 100 alumni
+        const alumni = namaAlumni.map((nama, index) => ({
+            id: index + 1,
+            nama: nama,
+            jurusan: jurusan[index % jurusan.length]
+        }));
+
+        const container = document.getElementById("alumniContainer");
+        const searchInput = document.getElementById("searchInput");
+        const noResult = document.getElementById("noResult");
+        const jumlahAlumni = document.getElementById("jumlahAlumni");
+
+        // Fungsi menampilkan data alumni
+        function tampilkanAlumni(data) {
+            container.innerHTML = "";
+
+            data.forEach(function(item) {
+                const card = document.createElement("div");
+                card.className = "alumni-card";
+
+                card.innerHTML = `
+                    <h3>${item.nama}</h3>
+                    <p>ID Alumni: ${item.id}</p>
+                    <p>Jurusan: ${item.jurusan}</p>
+                `;
+
+                container.appendChild(card);
+            });
+
+            jumlahAlumni.textContent =
+                `Menampilkan ${data.length} dari ${alumni.length} alumni`;
+
+            noResult.hidden = data.length !== 0;
+        }
+
+        // Fitur pencarian berdasarkan nama atau jurusan
+        searchInput.addEventListener("input", function() {
+            const keyword = searchInput.value.toLowerCase().trim();
+
+            const hasilPencarian = alumni.filter(function(item) {
+                return (
+                    item.nama.toLowerCase().includes(keyword) ||
+                    item.jurusan.toLowerCase().includes(keyword)
+                );
+            });
+
+            tampilkanAlumni(hasilPencarian);
+        });
+
+        // Menampilkan seluruh data saat halaman dibuka
+        tampilkanAlumni(alumni);
+    </script>
+
+</body>
+</html>

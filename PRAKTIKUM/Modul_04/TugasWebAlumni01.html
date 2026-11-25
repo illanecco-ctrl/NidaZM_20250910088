@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Alumni</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f5f4ef;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .alumni-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .alumni-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 18px;
+            border-left: 5px solid #5b83a3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        /* Warna garis kiri bergantian */
+        .alumni-card:nth-child(even) {
+            border-left-color: #d5a65e;
+        }
+
+        /* Efek hover */
+        .alumni-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .alumni-card h3 {
+            color: #30465a;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .alumni-card p {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Profil Alumni</h1>
+
+    <div class="alumni-container">
+
+        <div class="alumni-card">
+            <h3>Nida Zahra Maulida</h3>
+            <p>ID Alumni: 1</p>
+            <p>Jurusan: Sistem Informasi</p>
+        </div>
+
+        <div class="alumni-card">
+            <h3>Riffa Riyana</h3>
+            <p>ID Alumni: 2</p>
+            <p>Jurusan: Teknik Informatika</p>
+        </div>
+
+        <div class="alumni-card">
+            <h3>Abdul Alhaq</h3>
+            <p>ID Alumni: 3</p>
+            <p>Jurusan: Teknik Sipil</p>
+        </div>
+
+        <div class="alumni-card">
+            <h3>Muhammad Azmi</h3>
+            <p>ID Alumni: 4</p>
+            <p>Jurusan: Desain Komunikasi Visual</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
